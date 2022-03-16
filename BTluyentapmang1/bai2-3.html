@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let numbers = [1, 4, 0, 3, 19, 9, 8, 30, 98, 14];
+    let max = numbers[0];
+    let index = 0;
+    let sum = numbers[0];
+    for (let i = 1; i < numbers.length; i++) {
+        sum = sum + numbers[i];
+        if (numbers[i] > max) {
+            max = numbers[i]  ;
+            index = i;
+
+        }
+    }
+    let tb = sum / numbers.length;
+    document.write('Max là ' + max + '<br>');
+    document.write('Max ở vị trí số ' + index + '<br>');
+    document.write('Trung bình cộng các phần tử là ' + tb);
+</script>
+</body>
+</html>

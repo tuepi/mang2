@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [14, 3, 1, 9, 98, 2, 0 , 22, -16, 3];
+    let count = 0;
+    let a = '';
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] >= 10) {
+             a = a + arr[i] + ';';
+            count++;
+        }
+    }
+    document.write('Giá trị lớn hơn 10 là ' + a + '<br>');
+    document.write('Có tất cả ' + count + ' số.');
+</script>
+</body>
+</html>

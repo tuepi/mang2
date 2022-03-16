@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2>Web tra cứu từ vựng về hoa quả</h2>
+    <input type="text" id="nhap">
+    <button onclick="traCuu()">Tra cứu</button>
+    <p id="dich"></p>
+    <script>
+        function traCuu() {
+            let el = ["Orange", "Lemon", "Apple", "Banana", "Peach"];
+            let vn = ["Cam", "Chanh", "Táo", "Chuối", "Đào"];
+            let i;
+            let j = "Không tìm thấy trong từ điển."
+            let a = document.getElementById("nhap").value;
+            for (i = 0; i < el.length; i++) {
+                if (a == el[i]) {
+                    j = vn[i];
+                }
+            }
+            document.getElementById("dich").innerHTML = j;
+        }
+    </script>
+</body>
+</html>
